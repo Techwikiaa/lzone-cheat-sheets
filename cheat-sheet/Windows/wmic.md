@@ -63,3 +63,6 @@ Run any command remote, e.g.
 Enable RDP
 
     wmic /node:<ip> /user:<user> /password:<password> RDToggle where ServerName=<server name> call SetAllowTSConnections 1
+
+    ## ProductKey
+        wmic path softwarelicensingservice get OA3xOriginalProductKey
